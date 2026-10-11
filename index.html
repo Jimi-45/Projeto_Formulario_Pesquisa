@@ -14,10 +14,17 @@
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="name">Nome</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name" name="nome" required>
             <label for="Lname">Sobrenome</label>
-            <input type="text" id="Lname" required><br>
-            <label for="adress">Digite seu endereço</label>
+            <input type="text" id="Lname" name="sobrenome" required>
+            <label for="age">Idade</label>
+            <input type="number" id="age" name="idade">
+            <label for="nasc">Data de Nascimento</label>
+            <input type="date" id="nasc" name="data_de_nascimento"><br>
+        </fieldset>
+        <fieldset>    
+            <legend>Endereço</legend>
+            <label for="address">Endereço</label>
             <input type="text" id="adress" required>
             <label for="Codigo_postal">Cep</label>
             <input type="number" id="Codigo_postal">
@@ -56,13 +63,80 @@
                 <option value="PB">Paraíba</option>
                 <option value="PI">Piaui</option>
             </select><br>
-            <label for="Phone">Telefone</label>
-            <input type="tel" id="Phone">
-            <label for="Cel">Celular</label>
-            <input type="tel" id="Cel"><br>
-            <label for="Correio">E-mail</label>
-            <input type="email" id="Correio">
         </fieldset>
+        <fieldset>   
+            <legend>Contato</legend>
+            <label for="Phone">Telefone</label>
+            <input type="tel" id="Phone" name="telefone">
+            <label for="Cel">Celular</label>
+            <input type="tel" id="Cel" name="celular"><br>
+            <label for="Correio">E-mail</label>
+            <input type="email" id="Correio" name="email"><br>
+            <label for="repositorio">Github</label>
+            <input type="url" id="repositorio" name="github">
+            <label for="empregos">LinkeDin</label>
+            <input type="url" id="empregos" name="linkedin">
+        </fieldset>
+        <fieldset>   
+            <legend>Sexo</legend>
+            <input type="radio" id="masc" name="sexo" value="masculino">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="sexo" value="feminino">
+            <label for="fem">Feminino</label>
+            <input type="radio" id="omit" name="sexo" value="prefiro_nao_responder">
+            <label for="omit">Prefiro não responder</label>
+        </fieldset>
+        <fieldset>
+            <legend>Estado Civil</legend>
+            <input type="radio" id="casad" name="estado_civil" value="casado">
+            <label for="casad">Casado</label>
+            <input type="radio" id="solt" name="estado_civil" value="solteiro">
+            <label for="solt">Solteiro</label>
+            <input type="radio" id="div" name="estado_civil" value="divorciado">
+            <label for="div">Divorciado</label>
+            <input type="radio" id="sep" name="estado_civil" value="separado">
+            <label for="sep">Separado</label>
+            <input type="radio" id="uniao" name="estado_civil" value="uniao_estavel">
+            <label for="uniao">União Estável</label>
+            <input type="radio" id="omit" name="estado_civil" value="prefiro_nao_responder">
+            <label for="omit">Prefiro não responder</label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferência de Filmes</legend>
+            <input type="checkbox" id="dram" name="preferencias" value="drama">
+            <label for="dram">Drama</label>
+            <input type="checkbox" id="com" name="preferencias" value="comedia">
+            <label for="com">Comédia</label>
+            <input type="checkbox" id="sus" name="preferencias" value="suspense">
+            <label for="sus">Suspense</label>
+            <input type="checkbox" id="act" name="preferencias" value="acao">
+            <label for="act">Ação</label>
+            <input type="checkbox" id="ter" name="preferencias" value="terror">
+            <label for="ter">Terror</label>
+            <input type="checkbox" id="ave" name="preferencias" value="aventura">
+            <label for="ave">Avetura</label>
+            <input type="checkbox" id="omit" name="preferencias" value="nao_gosto_de_filmes">
+            <label for="omit">Não gosto de filmes</label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferência de Jogos</legend>
+            <input type="radio" id="yes" name="jogo" value="sim">
+            <label for="yes">Sim</label>
+            <input type="radio" id="no" name="jogo" value="nao">
+            <label for="no">Não</label><br>
+            <label for="game">Digite o Nome do Jogo Preferido:</label><br>
+            <input type="text" id="game" name="nome_do_jogo" value="">
+        </fieldset>
+        <fieldset>
+            <legend>Preferência de Esportes</legend>
+            <input type="radio" id="yes" name="esporte" value="sim">
+            <label for="yes">Sim</label>
+            <input type="radio" id="no" name="esporte" value="nao">
+            <label for="no">Não</label><br>
+            <label for="esportivo">Digite o Nome do Esporte Preferido:</label><br>
+            <input type="text" id="esportivo" name="nome_do_esporte" value="">
+        </fieldset>
+        
     </form>
 </body>
 </html>
