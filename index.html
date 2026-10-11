@@ -14,17 +14,54 @@
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="name">Nome</label>
-            <input type="text">
+            <input type="text" id="name" required>
             <label for="Lname">Sobrenome</label>
-            <input type="text">
+            <input type="text" id="Lname" required><br>
             <label for="adress">Digite seu endereço</label>
-            <input type="text">
+            <input type="text" id="adress" required>
+            <label for="Codigo_postal">Cep</label>
+            <input type="number" id="Codigo_postal">
             <label for="neighborhood">Bairro</label>
-            <input type="text">
+            <input type="text" id="neighborhood">
             <label for="city">Cidade</label>
-            <input type="text">
+            <input type="text" id="city">
             <label for="state">Estado</label>
-            <select name="" id=""></select>
+            <select name="Estado" id="state">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="AM">Amazonas</option>
+                <option value="PA">Pará</option>
+                <option value="TO">Tocantins</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="SE">Sergipe</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="RR">Roraima</option>
+                <option value="MA">Maranhão</option>
+                <option value="AP">Amapá</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Rio Grande do Sul</option>
+                <option value="GO">Goias</option>
+                <option value="RO">Rondônia</option>
+                <option value="CE">Ceará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PI">Piaui</option>
+            </select><br>
+            <label for="Phone">Telefone</label>
+            <input type="tel" id="Phone">
+            <label for="Cel">Celular</label>
+            <input type="tel" id="Cel"><br>
+            <label for="Correio">E-mail</label>
+            <input type="email" id="Correio">
         </fieldset>
     </form>
 </body>
